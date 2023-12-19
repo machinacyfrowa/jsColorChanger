@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--importujemy z CDN pliki CSS bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- główny kontener layoutu o stałej szerokości-->
+    <div class="container">
+        <div class="row">
+            <!-- row z pojedynczym col-->
+            <div class="col text-center">
+                <h1>Witaj świecie</h1>
+            </div>
+        </div>
+        <!-- row oznacza jeden wiersz - bootstrap postara się wyświetlić wszystko obok siebie-->
+        <div class="row">
+            <!--podział 25%/50%/25% -->
+            <div class="col-12 col-md-3 bg-primary-subtle">
+                <img src="https://picsum.photos/400/600" alt="" class="img-fluid" id="randomImage"
+                    style="display: inline;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptate suscipit, voluptatum sunt
+                repellendus ab ipsum quaerat necessitatibus aperiam minus provident quas quod obcaecati ipsam distinctio
+                dolorem tenetur, quis dignissimos?
+            </div>
+            <div class="col-12 col-md-6 bg-danger-subtle text-end">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/201/100" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/202/100" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/203/100" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-3 bg-warning-subtle d-none d-md-block">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Quisquam veniam nemo assumenda perferendis blanditiis qui dicta accusamus aspernatur.
+                Assumenda, facilis consequuntur. Distinctio saepe ipsum dolores ratione fugit non eligendi id?
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Czcionka:
+                <button id="fontNormal">Normalna</button>
+                <button id="fontLarge">Duża</button>
+                <button id="fontLargest">Największa</button>
+                <br>
+                <button id="hideImageButton">"zniknij" obrazek</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- alternatywny kontener-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-4 bg-warning-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora
+                atque nobis temporibus neque doloremque delectus minus, nam perferendis numquam, commodi asperiores
+                reiciendis corrupti distinctio ratione ab? Impedit, nisi quaerat.</div>
+            <div class="col-4 bg-danger-subtle ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                similique veniam praesentium iste optio sequi? Nemo aspernatur cum quis impedit corporis ipsa, ab
+                corrupti labore provident officia delectus dolorum mollitia.</div>
+            <div class="col-4 bg-primary-subtle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt nulla
+                soluta beatae quia consequatur molestias officiis. Debitis fugiat minima numquam exercitationem vitae.
+                Possimus itaque, culpa exercitationem veniam veritatis dolorem tenetur.</div>
+        </div>
+    </div>
+
+
+    <!--importujemy z CDN pliki JS bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
